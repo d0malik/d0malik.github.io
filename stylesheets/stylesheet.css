@@ -1,0 +1,251 @@
+h1 {
+    text-align: center;
+    white-space: pre;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    color: white;
+    font-size: 7em;
+    font-family: 'headerFont', sans-serif;
+}
+
+#underline {
+    background-color: white;
+    border: 1px transparent;
+    width: 960px;
+    height: 10px;
+    -webkit-transform: translateY(-800%);
+    transform: translateY(-800%);
+    margin: auto;
+    animation: underliner 5s ease-in-out;
+}
+
+h3 {
+    text-align: center;
+    white-space: pre;
+    -webkit-transform: translateY(85%);
+    transform: translateY(85%);
+    color: white;
+    font-size: 3.75em;
+    font-family: 'headerFont', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: 'Pavanam', sans-serif;
+    letter-spacing: 3.5px;
+}
+
+#aboutbox {
+    margin: 0 auto;
+}
+
+.aboutme {
+    text-align: center;
+    line-height: 28px;
+    margin: 30px;
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    font-family: 'aboutFont', sans-serif;
+}
+
+.fadein {
+    animation: fadeinbox 5s ease-in;
+}
+
+#menu {
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.menubutton {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    -webkit-transform: translateY(-143%);
+    transform: translateY(-143%);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px auto;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+    transform: rotate(-45deg) translate(-8px, 7px);
+}
+
+.change .bar2 {
+    z-index: -5;
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.buttons {
+    display: block;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.resume {
+    content: url(../buttonpics/resumepic.jpg);
+    display: none;
+    -webkit-transform: translateX(3.5%);
+    transform: translateX(3.5%);
+    pointer-events: auto;
+}
+
+.github {
+    content: url(../buttonpics/githubpic.jpg);
+    display: none;
+    -webkit-transform: translateX(3.5%);
+    transform: translateX(3.5%);
+    pointer-events: auto;
+}
+
+.contact {
+    content: url(../buttonpics/contactpic.jpg);
+    display: none;
+    -webkit-transform: translateX(3.5%);
+    transform: translateX(3.5%);
+    pointer-events: auto;
+}
+
+.change .resume {
+    animation: fadeinbox .75s ease-in 1 forwards;
+}
+
+.change .github {
+    animation: fadeinbox .75s ease-in 1 forwards;
+}
+
+.change .contact {
+    animation: fadeinbox .75s ease-in 1 forwards;
+}
+
+html {
+    background-image: url(../bg/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+html:after {
+    content: "";
+    animation: grain 8s steps(10) infinite;
+    background-image: url(../bg/stressed_linen.png);
+    top: -100%;
+    left: -50%;
+    min-height: 300%;
+    min-width: 300%;
+    margin: 0 auto;
+    opacity: 0.65;
+    position: fixed;
+    z-index: -3;
+}
+
+@keyframes underliner {
+    0%,
+    75% {
+        width: 0px;
+    }
+    100% {
+        width: 960px;
+    }
+}
+
+@keyframes fadeinbox {
+    0%,
+    50% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: .95;
+    }
+}
+
+@keyframes fadeoutbox {
+    0%,
+    50% {
+        visibility: visible;
+        opacity: .95;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes grain {
+    0%,
+    100% {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+        -webkit-transform: translate(-5%, -10%);
+    }
+    20% {
+        transform: translate(-15%, 5%);
+        -webkit-transform: translate(-15%, 5%);
+    }
+    30% {
+        transform: translate(7%, -25%);
+        -webkit-transform: translate(7%, -25%);
+    }
+    40% {
+        transform: translate(-5%, 25%);
+        -webkit-transform: translate(-5%, 25%);
+    }
+    50% {
+        transform: translate(-15%, 10%);
+        -webkit-transform: translate(-15%, 10%);
+    }
+    60% {
+        transform: translate(15%, 0%);
+        -webkit-transform: translate(15%, 0%);
+    }
+    70% {
+        transform: translate(0%, 15%);
+        -webkit-transform: translate(0%, 15%);
+    }
+    80% {
+        transform: translate(3%, 30%);
+        -webkit-transform: translate(-3%, 30%);
+    }
+    90% {
+        transform: translate(-10%, 10%);
+        -webkit-transform: translate(-10%, 10%);
+    }
+}
+
+@font-face {
+    font-family: 'headerFont';
+    src: url(../fonts/smalle.fon);
+}
+
+@font-face {
+    font-family: 'aboutFont';
+    src: url(../fonts/archivo.ttf);
+}
