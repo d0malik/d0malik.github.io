@@ -1,55 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+	<head>
+		<title>Daniel Domalik</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
-    <script src="javascripts/main.js">
-    </script>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Daniel Domalik</title>
-</head>
+				<!-- Header -->
+					<header id="header">
+						<h1>Daniel Domalik</h1>
+						<p>Software Engineer &nbsp;&bull;&nbsp; Developer &nbsp;&bull;&nbsp; University of Guelph</p>
+						<nav>
+							<ul>
+								<li><a href="assets/DomalikDanielResume.pdf" target="_blank" class="fa fa-file-text"><span class="label">Resume</span></a></li>
+								<li><a href="https://github.com/d0malik" target="_blank" class="fa fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:dd.domalik@gmail.com" class="fa fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-<body>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Daniel Domalik &nbsp;&bull;&nbsp; Design: <a href="http://html5up.net">HTML5 UP</a></span>
+					</footer>
 
-    <br>
-    <div id="title">
-        <header>
-            <h1> </h1>
-            <h3> </h3>
-        </header>
-    </div>
-
-    <div id="underline"></div>
-
-    <br>
-
-    <div class="fadein">
-        <div id="aboutbox" div style="width:350px; height:200px; border:1px solid transparent; border-radius:10px; background-color:#202020; opacity: .95;">
-            <h2>WELCOME.</h2>
-            <p class="aboutme">University of Guelph<br>Bachelor of Computing<br>Marketing</p>
-        </div>
-
-        <div id="menu" div style="width:50px; height:50px; border:1px solid transparent; border-radius:10px; background-color:#FFFFFF; opacity: .95;"></div>
-
-        <div class="menubutton" onclick="openMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2" div id ="b2"></div>
-            <div class="bar3"></div>
-        </div>
-
-        <div class="buttons" div style="width:500px; height:150px; border:1px solid transparent; border-radius:10px; opacity: .95;">
-            <div class="resume" div id="resume1" onClick="window.open('resume\Daniel_Domalik.pdf');" div style="width:160px; height:150px; border:10px transparent; border-radius:20px; background-color:#202020;"></div>
-            <div class="github" div id="git" onClick="window.open('https://github.com/d0malik', '_blank');" div style="width:160px; height:150px; border:10px transparent; border-radius:20px; background-color:#202020;"></div>
-            <div class="contact" div id ="cont" onClick="window.location.href='mailto:dd.domalik@gmail.com'" div style="width:160px; height:150px; border:10px transparent; border-radius:20px; background-color:#202020;"></div>
-        </div>
-
-    </div>
-</body>
-
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
